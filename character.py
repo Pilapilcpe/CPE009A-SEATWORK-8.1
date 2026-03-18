@@ -1,6 +1,6 @@
-class Character():
+class Character:
     def __init__(self, username):
-        self.__username = username
+        self.username = username
         self.__hp = 100
         self.__mana = 100
         self.__damage = 5
@@ -9,7 +9,7 @@ class Character():
         self.__int = 0
         self.__agi = 0
     def getUsername(self):
-        return self._username
+        return self.username
     def setUsername(self, new_username):
         self.__username = new_username
     def getHp(self):
@@ -41,3 +41,6 @@ class Character():
     def addHp(self, heal_amount):
         self.__hp = self.__hp + heal_amount
         
+character1=Character("loreen")
+print(character1.username)
+print(character1.getUsername())
